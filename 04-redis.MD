@@ -25,3 +25,8 @@ systemctl enable redis
 ```
 systemctl start redis
 ```
+* validate if the port 6379 is opened or not for internet facing IP (0 0.0.0.0:6379)
+```
+netstat -lntp
+```
+* Then add the 6379 port in EC2 security group inbound rules.

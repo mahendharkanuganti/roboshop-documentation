@@ -23,3 +23,7 @@ mysql_secure_installation --set-root-pass RoboShop@1
 ```
 mysql -uroot -pRoboShop@1
 ```
+* validate if the port 3306 is opened or not 
+```
+netstat -lntp
+```

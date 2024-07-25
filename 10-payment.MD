@@ -5,7 +5,7 @@ This service is responsible for payments in RoboShop e-commerce app. This servic
 Install Python 3.6
 
 ```
-dnf install python36 gcc python3-devel -y
+dnf install python3.12 gcc python3-devel -y
 ```
 
 Configure the application.
@@ -94,3 +94,8 @@ systemctl enable payment
 ```
 systemctl start payment
 ```
+* validate if the port 8080 is opened or not 
+```
+netstat -lntp
+```
+* Then add the 8080 port in EC2 security group inbound rules.

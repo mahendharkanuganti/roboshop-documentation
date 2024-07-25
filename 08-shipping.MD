@@ -109,3 +109,8 @@ This service needs a restart because it is dependent on schema, After loading sc
 ```
 systemctl restart shipping
 ```
+* validate if the port 8080 is opened or not 
+```
+netstat -lntp
+```
+* Then add the 8080 port in EC2 security group inbound rules.

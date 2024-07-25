@@ -43,3 +43,8 @@ Restart the service
 ```
 systemctl restart mongod
 ```
+* validate if the port 27017 is opened or not for internet facing IP (0 0.0.0.0:27017)
+```
+netstat -lntp
+```
+* Then add the 27017 port in EC2 security group inbound rules.

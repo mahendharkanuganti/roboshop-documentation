@@ -38,3 +38,9 @@ rabbitmqctl add_user roboshop roboshop123
 ```
 rabbitmqctl set_permissions -p / roboshop ".*" ".*" ".*"
 ```
+* validate if the port 25672 is opened or not for internet facing IP (0 0.0.0.0:25672)
+```
+netstat -lntp
+```
+* Then add the 25672 port in EC2 security group inbound rules.
+* Also verify the port 4369 if its causing any connectivity issue
